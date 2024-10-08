@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo à Igreja</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-text">
+            <h1>Bem-vindo</h1>
+        </div>
+        <div class="form-container">
+            <form id="churchForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Número de Telefone:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="christian">Você é cristão?</label>
+                <select id="christian" name="christian" required>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+
+                <button type="button" onclick="joinWhatsApp()">Entrar no Grupo do WhatsApp</button>
+            </form>
+        </div>
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
